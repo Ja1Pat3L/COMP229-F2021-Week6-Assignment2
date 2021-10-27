@@ -1,0 +1,35 @@
+<div class="row justify-content-lg-center g-3">
+        <h2><%= title %> Scientist</h2>
+        <form method="POST" class="col-lg-6 col-md-10 col-sm-10">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="firstname">First Name</span>
+                <input id="name" type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="Item First Name" 
+                name="firstname" value=<%= scientist.firstname %> required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="lastname">Last Name</span>
+                <input id="lastname" type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="Item Last Name" 
+                name="lastname" value=<%= scientist.lastname %> required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="field">Field</span>
+                <input id="field" type="text" class="form-control" placeholder="field" aria-label="field" aria-describedby="Item Field" 
+                name="field" value=<%= scientist.field %> required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="ethnicity">Ethnicity</span>
+                <input id="ethnicity" type="text" class="form-control" placeholder="ethnicity" aria-label="ethnicity" aria-describedby="Item ethnicity" 
+                name="ethnicity" value=<%= scientist.ethnicity %> required>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="century">Century</span>
+                <input id="century" type="number" class="form-control" placeholder="century" aria-label="century" aria-describedby="Item century" 
+                name="century" value=<%= scientist.century %> required>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-edit fa-lg"></i> Edit
+            </button>
+            <a href="/scientist" class="btn btn-warning">
+                <i class="fas fa-undo"></i> Cancel</a>
+        </form>
+    </div>
